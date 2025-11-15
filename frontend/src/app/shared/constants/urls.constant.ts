@@ -1,10 +1,10 @@
 export class API_URL {
-  static SEGUIMIENTO = "/api/seguimiento";
-  static PEDIDOS = "/api/pedido";
-  static ALMACEN = "/api/almacen";
-  static CONTROL = "/api/control";
-  static REPORTES = "/api/reportes";
-  static RECLAMOS = "/api/reclamos";
+  static SEGUIMIENTO = "/api/distribucion";
+  static PEDIDOS = "/api/ventas";
+  static ALMACEN = "/api/operaciones";
+  static CONTROL = "/api/produccion";
+  static REPORTES = "/api/analytics";
+  static RECLAMOS = "/api/servicio-cliente";
   static AUTH = "/api/auth";
-  static INCIDENCIAS = "/api/control";
+  static INCIDENCIAS = "/api/produccion";
 }

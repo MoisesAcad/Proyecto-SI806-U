@@ -1,24 +1,26 @@
-<div style="background-color: #003492; height: 100vh;">
+<div style="background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%); height: 100vh;">
   <amplify-authenticator
     initialState="signIn"
     [hideSignUp]="true"
-    style = "--amplify-components-button-primary-background-color: rgba(193,42,33,255);
-            --amplify-components-tabs-item-active-border-color: rgba(193,42,33,255);
-            --amplify-components-tabs-item-color: rgba(193,42,33,255);
-            --amplify-components-tabs-item-active-color: rgba(225,37,27,255);
-            --amplify-components-button-link-color: rgba(225,37,27,255);
-            --amplify-components-button-primary-hover-background-color: rgba(225,37,27,255);
-            --amplify-components-button-link-hover-background-color: rgb(247, 220, 220);
-            --amplify-components-button-link-hover-color: rgba(193,42,33,255);
+    style = "--amplify-components-button-primary-background-color: #D2691E;
+            --amplify-components-tabs-item-active-border-color: #D2691E;
+            --amplify-components-tabs-item-color: #8B4513;
+            --amplify-components-tabs-item-active-color: #D2691E;
+            --amplify-components-button-link-color: #D2691E;
+            --amplify-components-button-primary-hover-background-color: #8B4513;
+            --amplify-components-button-link-hover-background-color: #FFF8F0;
+            --amplify-components-button-link-hover-color: #8B4513;
 "
   >
     <ng-template amplifySlot="header">
       <div style="padding: var(--amplify-space-large); text-align: center">
         <img
           class="amplify-image"
-          alt="Amplify logo"
+          alt="Don Mamino Logo"
           src="assets/logo.png"
         />
+        <h2 style="color: #6B3410; margin-top: 1rem; font-weight: 700;">Sistema S&OP</h2>
+        <p style="color: #8B4513; font-size: 0.9rem;">Planificación y Producción</p>
       </div>
     </ng-template>
 
@@ -27,8 +29,8 @@
       let-user="user"
       let-signOut="signOut"
     >
-      <h2>Welcome, {{ user.username }}!</h2>
-      <button (click)="signOut()">Sign Out</button>
+      <h2>Bienvenido, {{ user.username }}!</h2>
+      <button (click)="signOut()">Cerrar Sesión</button>
     </ng-template>
   </amplify-authenticator>
 

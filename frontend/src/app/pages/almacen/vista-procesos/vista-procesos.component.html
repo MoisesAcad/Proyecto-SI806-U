@@ -1,17 +1,17 @@
 <div class="section">
-  <h1>Vista de procesos de traslado</h1>
+  <h1>Gestión de Operaciones - Insumos y Despacho</h1>
 </div>
 
 <div class="section">
-  <h2>Iniciar un proceso de traslado de mercancías</h2>
-  <p>Registrar una operación de picking para iniciar un nuevo proceso de traslado de mercancías.</p>
+  <h2>Iniciar preparación de productos</h2>
+  <p>Registrar una operación de picking para iniciar un nuevo proceso de preparación y despacho de productos de panadería.</p>
   <button pButton type="button" label="Iniciar nuevo proceso" icon="pi pi-plus" (click)="navigateToPicking()"></button>
 </div>
 
 <div class="section">
   <h2>Ver procesos registrados</h2>
-  <p class="p-mb-5">Ingresa el número de precinto de una mercancía o el código de guía de remisión de un traslado para
-    visualizar las mercancías asociadas y/o registrar una nueva operación.</p>
+  <p class="p-mb-5">Ingresa el número de precinto de los productos o el código de guía de remisión de un despacho para
+    visualizar los productos asociados y/o registrar una nueva operación.</p>
   <div class="search-options">
     <label>
       <input type="radio" name="searchType" value="nroPrecinto" [(ngModel)]="searchType"
@@ -78,19 +78,19 @@
     </div>
 
     <div class="p-mb-3">
-      <h2>Mercancías</h2>
+      <h2>Productos Empaquetados</h2>
       <div *ngFor="let mercancia of resultadoBusqueda.mercancias">
         <p>Número de Precinto: {{ mercancia.nroPrecinto }}</p>
         <p-table [value]="mercancia.stocks">
           <ng-template pTemplate="header">
             <tr>
               <th>Código</th>
-              <th>Nombre</th>
+              <th>Producto</th>
               <th>Categoría</th>
               <th>Tipo</th>
-              <th>Segmento</th>
+              <th>Línea</th>
               <th>Unidad</th>
-              <th>Cantidad a Transportar</th>
+              <th>Cantidad a Despachar</th>
             </tr>
           </ng-template>
           <ng-template pTemplate="body" let-stock>
@@ -109,7 +109,7 @@
     </div>
 
     <div *ngIf="resultadoBusqueda.traslado" class="p-mb-3">
-      <h3>Traslado</h3>
+      <h3>Despacho</h3>
       <p [ngClass]="{
           'En curso': 'estado-traslado en-curso',
           'Recibido': 'estado-traslado recibido'

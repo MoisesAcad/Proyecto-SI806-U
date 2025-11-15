@@ -20,13 +20,17 @@ body {
 html,
 * {
   box-sizing: border-box;
-  --bg-login: #3075b9;
-  --bg-sidenav: #044a91;
-  --bg-body: #f4f7fa;
+  --bg-login: #8B4513;
+  --bg-sidenav: #6B3410;
+  --bg-body: #FFF8F0;
   --bg-card: #fff;
-  --color-sidenav-item: #f3f3f3;
-  --bg-sidenav-item-active: #fff;
-  --color-sidenav-item-active: #06335f;
+  --color-sidenav-item: #F5DEB3;
+  --bg-sidenav-item-active: #FFE4B5;
+  --color-sidenav-item-active: #6B3410;
+  --color-primary: #D2691E;
+  --color-secondary: #8B4513;
+  --color-accent: #FFD700;
+  --color-fresh: #90EE90;
 }
 
 body {

@@ -1,6 +1,6 @@
 <div class="container">
   <div class="header">
-    <h2>Lista de Incidencias</h2>
+    <h2>Incidencias de Producción</h2>
     <div class="filtros">
       <label for="dropdownMes">Mes:</label>
       <p-dropdown [options]="meses" [(ngModel)]="searchMes" placeholder="Seleccionar Mes"
@@ -10,7 +10,7 @@
         (onChange)="filtrarIncidencias()" id="dropdownAnio" class="dropdown dropdown-anio"></p-dropdown>
     </div>
     <div class="nuevo-btn-container">
-      <button pButton type="button" label="Nueva Incidencia" routerLink="/control/registro-incidencias"
+      <button pButton type="button" label="Registrar Incidencia" routerLink="/control/registro-incidencias"
         (click)="nuevaIncidencia()" class="nuevo-btn"></button>
     </div>
   </div>

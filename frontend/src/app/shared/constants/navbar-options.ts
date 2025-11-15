@@ -1,13 +1,28 @@
 export default [
   {
+    routeLink: 'home',
+    icon: 'fa fa-home',
+    label: 'Dashboard'
+  },
+  {
     routeLink: 'pedidos',
-    icon: 'fa fa-cart-plus',
-    label: 'Pedidos'
+    icon: 'fa fa-shopping-cart',
+    label: 'Ventas B2B'
+  },
+  {
+    routeLink: 'almacen',
+    icon: 'fa fa-warehouse',
+    label: 'Operaciones'
+  },
+  {
+    routeLink: 'control',
+    icon: 'fa fa-industry',
+    label: 'Producción'
   },
   {
     routeLink: 'seguimiento',
-    icon: 'fa fa-map-marked',
-    label: 'Seguimiento',
+    icon: 'fa fa-truck',
+    label: 'Distribución',
     items: [
       {
         routeLink: 'vehiculos',
@@ -19,33 +34,18 @@ export default [
       },
       {
         routeLink: 'transportistas',
-        label: 'Transportistas'
+        label: 'Conductores'
       }
     ]
   },
   {
-    routeLink: 'almacen',
-    icon: 'fa fa-box',
-    label: 'Almacén'
-  },
-  {
-    routeLink: 'control',
-    icon: 'fa fa-wrench',
-    label: 'Control'
+    routeLink: 'reclamos',
+    icon: 'fa fa-comment-alt',
+    label: 'Servicio al Cliente'
   },
   {
     routeLink: 'reportes',
-    icon: 'fa fa-file-contract',
-    label: 'Reportes'
-  },
-  {
-    routeLink: 'reclamos',
-    icon: 'fa fa-flag',
-    label: 'Reclamos'
-  },
-  {
-    routeLink: 'home',
-    icon: 'fa fa-home',
-    label: 'Home'
+    icon: 'fa fa-chart-line',
+    label: 'Análisis S&OP'
   },
 ];

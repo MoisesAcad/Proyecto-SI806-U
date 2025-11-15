@@ -1,9 +1,9 @@
 <div class="container">
   <div class="header">
-    <h2>Lista de Conductores</h2>
+    <h2>Gestión de Turnos - Personal de Producción</h2>
     <input type="text" pInputText placeholder="Buscar..." [(ngModel)]="searchTerm" (input)="filtrarConductores()" class="search-box"/>
-    <p-button type="button" label="Incidencias" icon="pi pi-exclamation-circle" (onClick)="irAIncidencias()"></p-button>
-    <p-button type="button" label="Vehículos" icon="pi pi-car" class="vehiculos-btn" (onClick)="irAVehiculos()"></p-button>
+    <p-button type="button" label="Incidentes de Producción" icon="pi pi-exclamation-circle" (onClick)="irAIncidencias()"></p-button>
+    <p-button type="button" label="Equipos" icon="pi pi-cog" class="vehiculos-btn" (onClick)="irAVehiculos()"></p-button>
   </div>
 
   <p-table [value]="conductoresFiltrados" class="p-datatable-gridlines p-datatable-striped">

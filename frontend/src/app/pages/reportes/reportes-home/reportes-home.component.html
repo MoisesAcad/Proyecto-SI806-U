@@ -1,9 +1,9 @@
 <div class="reportes">
   <div class="flex gap-2">
-    <p-panel header="Opciones" class="w-29rem h-12rem">
+    <p-panel header="Análisis S&OP" class="w-29rem h-12rem">
       <div class="opciones" class="flex flex-column gap-1 w-full">
-        <p-button styleClass="w-full" (click)="showDialogReporteGenerar()" label="Generar reporte" />
-        <p-dialog header="Generar reporte" [(visible)]="visibleReporteGenerar" [modal]="true"
+        <p-button styleClass="w-full" (click)="showDialogReporteGenerar()" label="Generar Análisis" />
+        <p-dialog header="Generar Análisis S&OP" [(visible)]="visibleReporteGenerar" [modal]="true"
           [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }" [style]="{ width: '40vw', height: '80vh' }"
           [draggable]="false" [resizable]="false">
           <form class="flex flex-column justify-content-between gap-4 h-full" [formGroup]="reporteGenerarForm"
@@ -36,7 +36,7 @@
             </div>
           </form>
         </p-dialog>
-        <p-button styleClass="w-full" (click)="showDialogReporteProgramacion()" label="Programar reporte" />
+        <p-button styleClass="w-full" (click)="showDialogReporteProgramacion()" label="Programar Análisis" />
         <p-dialog header="Programar reporte" [(visible)]="visibleReporteProgramacion" [modal]="true"
           [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }" [style]="{ width: '40vw', height: '80vh' }"
           [draggable]="false" [resizable]="false">

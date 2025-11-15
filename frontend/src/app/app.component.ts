@@ -29,5 +29,5 @@ import { MessageService } from "primeng/api";
   providers: [MessageService],
 })
 export class AppComponent {
-  title = 'san-fernando-app';
+  title = 'don-mamino-sop';
 }

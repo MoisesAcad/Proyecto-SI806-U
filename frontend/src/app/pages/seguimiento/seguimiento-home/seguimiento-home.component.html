@@ -1,23 +1,23 @@
-<h1>Inicio</h1>
+<h1>Centro de Distribución</h1>
 <div class="seguimiento-wrapper">
   <div class="flex flex-column gap-4 p-4">
-    <span>Traslados</span>
-    <p-button (onClick)="irTrasladosProceso()" styleClass="w-full" label="Traslados en Proceso" />
-    <p-button (onClick)="irTrasladosProgramado()" styleClass="w-full" label="Traslados Programados" severity="success" />
+    <span>Entregas</span>
+    <p-button (onClick)="irTrasladosProceso()" styleClass="w-full" label="Entregas en Curso" />
+    <p-button (onClick)="irTrasladosProgramado()" styleClass="w-full" label="Entregas Programadas" severity="success" />
   </div>
   <div class="flex flex-column gap-4 p-4">
-    <span>Vehículos</span>
-    <p-button  (onClick)="irVehiculos()" styleClass="w-full" label="Vehículos Disponibles" />
-    <p-button styleClass="w-full" label="Nuevo Vehículo" severity="success" />
+    <span>Vehículos de Reparto</span>
+    <p-button  (onClick)="irVehiculos()" styleClass="w-full" label="Flota Disponible" />
+    <p-button styleClass="w-full" label="Registrar Vehículo" severity="success" />
   </div>
   <div class="flex flex-column gap-4 p-4">
-    <span>Rutas</span>
-    <p-button (onClick)="irRuta()" styleClass="w-full" label="Rutas disponibles" />
-    <p-button styleClass="w-full" label="Crear nueva ruta" severity="success" />
+    <span>Rutas de Distribución</span>
+    <p-button (onClick)="irRuta()" styleClass="w-full" label="Rutas Activas" />
+    <p-button styleClass="w-full" label="Planificar Ruta" severity="success" />
   </div>
   <div class="flex flex-column gap-4 p-4">
-    <span>Transportistas</span>
-    <p-button  (onClick)="irTransportista()" styleClass="w-full" label="Transportistas" />
-    <p-button styleClass="w-full" label="Nuevo Transportista" severity="success" />
+    <span>Conductores</span>
+    <p-button  (onClick)="irTransportista()" styleClass="w-full" label="Conductores" />
+    <p-button styleClass="w-full" label="Registrar Conductor" severity="success" />
   </div>
 </div>
